@@ -1,0 +1,31 @@
+<h1>Listing boats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Coxed</th>
+      <th>Seats</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @boats.each do |boat| %>
+      <tr>
+        <td><%= boat.title %></td>
+        <td><%= boat.coxed %></td>
+        <td><%= boat.seats %></td>
+        <td><%= link_to 'Show', boat %></td>
+        <td><%= link_to 'Edit', edit_boat_path(boat) %></td>
+        <td><%= link_to 'Destroy', boat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Boat', new_boat_path %>

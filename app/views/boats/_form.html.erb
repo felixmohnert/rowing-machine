@@ -1,0 +1,29 @@
+<%= form_for(@boat) do |f| %>
+  <% if @boat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@boat.errors.count, "error") %> prohibited this boat from being saved:</h2>
+
+      <ul>
+      <% @boat.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :coxed %><br>
+    <%= f.check_box :coxed %>
+  </div>
+  <div class="field">
+    <%= f.label :seats %><br>
+    <%= f.number_field :seats %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
