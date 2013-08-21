@@ -1,0 +1,33 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: praktikum_info_development
+  pool: 5
+  username: your_username
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: praktikum_info_test
+  min_messages: WARNING
+  pool: 5
+  username: your_username
+  password:
+
+staging:
+  adapter: postgresql
+  encoding: unicode
+  database: praktikum_info_development
+  min_messages: WARNING
+  pool: 5
+  username: your_username
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: praktikum_info_development
+  pool: 5
+  username: your_username
+  password:
