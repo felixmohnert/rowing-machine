@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: praktikum_info_development
+  database: rowing-machine_development
   pool: 5
   username: your_username
   password:
@@ -9,7 +9,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: praktikum_info_test
+  database: rowing-machine_test
   min_messages: WARNING
   pool: 5
   username: your_username
@@ -18,7 +18,7 @@ test:
 staging:
   adapter: postgresql
   encoding: unicode
-  database: praktikum_info_development
+  database: rowing-machine_development
   min_messages: WARNING
   pool: 5
   username: your_username
@@ -27,7 +27,7 @@ staging:
 production:
   adapter: postgresql
   encoding: unicode
-  database: praktikum_info_development
+  database: rowing-machine_development
   pool: 5
   username: your_username
   password:
