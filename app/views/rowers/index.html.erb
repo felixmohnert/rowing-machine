@@ -1,0 +1,35 @@
+<h1>Listing rowers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Birthdate</th>
+      <th>Address</th>
+      <th>Zip</th>
+      <th>City</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rowers.each do |rower| %>
+      <tr>
+        <td><%= rower.name %></td>
+        <td><%= rower.birthdate %></td>
+        <td><%= rower.address %></td>
+        <td><%= rower.zip %></td>
+        <td><%= rower.city %></td>
+        <td><%= link_to 'Show', rower %></td>
+        <td><%= link_to 'Edit', edit_rower_path(rower) %></td>
+        <td><%= link_to 'Destroy', rower, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rower', new_rower_path %>

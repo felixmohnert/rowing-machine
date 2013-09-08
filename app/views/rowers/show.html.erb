@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @rower.name %>
+</p>
+
+<p>
+  <strong>Birthdate:</strong>
+  <%= @rower.birthdate %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @rower.address %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @rower.zip %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @rower.city %>
+</p>
+
+<%= link_to 'Edit', edit_rower_path(@rower) %> |
+<%= link_to 'Back', rowers_path %>
