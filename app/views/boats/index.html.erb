@@ -1,31 +1,42 @@
-<h1>Listing boats</h1>
+<div class="row">
+  <div class="col-md-8">
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Coxed</th>
-      <th>Seats</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+    <h1>Listing boats</h1>
 
-  <tbody>
-    <% @boats.each do |boat| %>
-      <tr>
-        <td><%= boat.title %></td>
-        <td><%= boat.coxed %></td>
-        <td><%= boat.seats %></td>
-        <td><%= link_to 'Show', boat %></td>
-        <td><%= link_to 'Edit', edit_boat_path(boat) %></td>
-        <td><%= link_to 'Destroy', boat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Coxed</th>
+          <th>Seats</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
 
-<br>
+      <tbody>
+        <% @boats.each do |boat| %>
+          <tr>
+            <td><%= boat.title %></td>
+            <td><%= boat.coxed %></td>
+            <td><%= boat.seats %></td>
+            <td><%= link_to 'Show', boat %></td>
+            <td><%= link_to 'Edit', edit_boat_path(boat) %></td>
+            <td><%= link_to 'Destroy', boat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
 
-<%= link_to 'New Boat', new_boat_path %>
+    <br>
+
+    <%= link_to 'New Boat', new_boat_path %>
+
+  </div>
+
+  <div class="col-md-4">
+    hkjhkhkjh
+  </div>
+
+</div>
