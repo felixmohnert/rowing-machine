@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/felixmohnert/rowing-machine.png)](https://travis-ci.org/felixmohnert/rowing-machine)
 # Rowing Machine
 
 `rowing-machine` is a logbook, inventory, roster and member administration area - All in for the rowers.
