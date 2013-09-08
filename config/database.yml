@@ -1,0 +1,8 @@
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: rowing-machine_test
+  min_messages: WARNING
+  pool: 5
+  username:
+  password:
