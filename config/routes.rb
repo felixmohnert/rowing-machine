@@ -1,11 +1,17 @@
 RowingMachine::Application.routes.draw do
+  resources :travels
+
+  resources :trips
+
+  resources :rowers
+
   resources :boats
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'boats#index'
+  root 'travels#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -41,7 +47,7 @@ RowingMachine::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
