@@ -1,8 +1,33 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: rowing-machine_development
+  pool: 5
+  username: your_username
+  password:
+
 test:
   adapter: postgresql
   encoding: unicode
   database: rowing-machine_test
   min_messages: WARNING
   pool: 5
-  username:
+  username: your_username
+  password:
+
+staging:
+  adapter: postgresql
+  encoding: unicode
+  database: rowing-machine_development
+  min_messages: WARNING
+  pool: 5
+  username: your_username
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: rowing-machine_development
+  pool: 5
+  username: your_username
   password:
